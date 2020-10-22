@@ -3,7 +3,7 @@ setInterval(() => {
         elem = $(".Card--facedown")[i];
  
        elem.children[1].children[0].children[0].innerText = "";
-}
+     }
 
      for (i = 0; i < $(".Card--facedown").length; i++) {
          elem = $(".Card--facedown")[i];
