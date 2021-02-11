@@ -1,3 +1,5 @@
+textColor = prompt("What do you want the text color of the text appearing over the cards to be? (color name or hex code)");
+
 setInterval(() => {
     for (i = 0; i < $(".Card--facedown").length; i++) {
         elem = $(".Card--facedown")[i];
@@ -19,5 +21,6 @@ setInterval(() => {
             .replaceAll("/", "");
  
         elem.children[1].children[0].children[0].innerText = cardNum;
+        elem.children[1].children[0].children[0].style.color = textColor;
     }
 }, 1000);
